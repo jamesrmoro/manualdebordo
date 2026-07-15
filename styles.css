@@ -2208,3 +2208,15 @@ h1 span::after {
     width: min(68%, 320px);
   }
 }
+
+/* Remove decorative pseudo-element panels around the product mockup */
+.book-scene::before,
+.book::after {
+  content: none;
+  display: none;
+}
+
+.book {
+  background: transparent;
+  padding: 0;
+}
