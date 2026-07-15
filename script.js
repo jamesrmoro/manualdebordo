@@ -6,7 +6,7 @@
  * Enquanto estiver vazio, o botão abre o WhatsApp e permite escolher
  * um contato para enviar a mensagem.
  */
-const WHATSAPP_NUMBER = "";
+const WHATSAPP_NUMBER = "5512982587007";
 
 const WHATSAPP_MESSAGE =
   "Olá! Quero comprar o e-book Manual de Bordo por R$ 10,90. Pode me passar as informações para pagamento?";
