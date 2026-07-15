@@ -2283,3 +2283,28 @@ h1 span::after {
 .eyebrow-light {
   color: var(--white);
 }
+
+/* Desktop product mockup scale increase */
+@media (min-width: 920px) {
+  .book-scene {
+    width: min(46vw, 560px);
+  }
+
+  .book {
+    width: min(88%, 470px);
+  }
+
+  .purchase-page {
+    width: 285px;
+  }
+}
+
+@media (min-width: 920px) and (max-height: 820px) {
+  .book-scene {
+    width: min(43vw, 520px);
+  }
+
+  .book {
+    width: min(82%, 420px);
+  }
+}

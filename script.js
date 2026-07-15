@@ -9,7 +9,7 @@
 const WHATSAPP_NUMBER = "5512982587007";
 
 const WHATSAPP_MESSAGE =
-  "Olá! Quero comprar o e-book Manual de Bordo por R$ 10,90. Pode me passar as informações para pagamento?";
+  "Olá! Quero comprar o e-book Manual de Bordo por R$ 19,90. Pode me passar as informações para pagamento?";
 
 function buildWhatsAppUrl() {
   const cleanNumber = WHATSAPP_NUMBER.replace(/\D/g, "");
@@ -29,13 +29,13 @@ function configureWhatsAppLinks() {
     link.rel = "noopener noreferrer";
     link.setAttribute(
       "aria-label",
-      "Comprar o e-book Manual de Bordo por R$ 10,90 pelo WhatsApp"
+      "Comprar o e-book Manual de Bordo por R$ 19,90 pelo WhatsApp"
     );
 
     link.addEventListener("click", () => {
       window.dispatchEvent(
         new CustomEvent("ebook:whatsapp-click", {
-          detail: { product: "Manual de Bordo", price: 10.9 }
+          detail: { product: "Manual de Bordo", price: 19.9 }
         })
       );
     });
