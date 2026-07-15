@@ -2154,3 +2154,57 @@ h1 span::after {
     width: min(70%, 340px);
   }
 }
+
+/* Review refinements: align hero/header with page rhythm and compact benefit labels */
+@media (min-width: 920px) {
+  .site-header .container,
+  .hero .container {
+    width: min(calc(100% - 56px), var(--container));
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 0.48fr) minmax(390px, 0.52fr);
+    gap: clamp(28px, 4vw, 54px);
+  }
+
+  h1 {
+    max-width: 600px;
+    font-size: clamp(3rem, 3.95vw, 4.05rem);
+  }
+
+  .hero-benefit-item {
+    white-space: nowrap;
+    font-size: 0.74rem;
+  }
+
+  .book-scene {
+    width: min(42vw, 490px);
+  }
+
+  .book {
+    width: min(72%, 360px);
+  }
+}
+
+.book img,
+.purchase-page img {
+  background: transparent;
+}
+
+@media (min-width: 920px) and (max-height: 820px) {
+  h1 {
+    font-size: clamp(2.75rem, 3.55vw, 3.7rem);
+  }
+
+  .hero-benefit-item {
+    font-size: 0.72rem;
+  }
+
+  .book-scene {
+    width: min(39vw, 450px);
+  }
+
+  .book {
+    width: min(68%, 320px);
+  }
+}
