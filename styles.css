@@ -2220,3 +2220,61 @@ h1 span::after {
   background: transparent;
   padding: 0;
 }
+
+/* Product composition tweaks requested after removing the mockup panel */
+.book {
+  width: min(82%, 410px);
+  box-shadow: none;
+}
+
+.book-shadow {
+  display: none;
+}
+
+.mini-card-top {
+  top: 20px;
+  left: 22px;
+}
+
+.logo-planet {
+  top: 30px;
+  right: 24px;
+}
+
+@media (min-width: 920px) {
+  .book {
+    width: min(80%, 400px);
+  }
+
+  .mini-card-top {
+    top: 18px;
+    left: 32px;
+  }
+
+  .logo-planet {
+    top: 28px;
+    right: 32px;
+  }
+}
+
+@media (min-width: 920px) and (max-height: 820px) {
+  .book {
+    width: min(76%, 360px);
+  }
+}
+
+@media (max-width: 619px) {
+  .book {
+    width: min(82%, 350px);
+  }
+
+  .mini-card-top {
+    top: 44px;
+    left: 8px;
+  }
+
+  .logo-planet {
+    top: 56px;
+    right: 8px;
+  }
+}
