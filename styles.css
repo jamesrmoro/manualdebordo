@@ -2278,3 +2278,8 @@ h1 span::after {
     right: 8px;
   }
 }
+
+/* Keep the audience eyebrow readable on the dark section */
+.eyebrow-light {
+  color: var(--white);
+}
